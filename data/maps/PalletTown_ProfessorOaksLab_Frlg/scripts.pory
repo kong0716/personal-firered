@@ -1661,11 +1661,12 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
 script PalletTown_ProfessorOaksLab_GiveOtherStarters{
 	applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
-    msgbox("{RIVAL} left too early...\nI wanted to give both of you some more\nrare Pokémon to help with...")
-    msgbox("Here you can have these Pokémon")
+    msgbox("Heavens is that boy far too hasty.\nTo help you in this great undertaking,\nI wanted to give you some rare Pokémon.")
     waitmessage()
     // Bulbasaur Starter
     if(var(VAR_STARTER_MON) == 0){
+        msgbox("Since you already have Bulbasaur,\n I'll give you Charmander and Squirtle")
+        waitmessage()
         givemon(SPECIES_CHARMANDER, 5)
         setvar(VAR_TEMP_0, SPECIES_CHARMANDER)
         call(PalletTown_ProfessorOaksLab_GiveOtherStartersNickName)
@@ -1675,6 +1676,8 @@ script PalletTown_ProfessorOaksLab_GiveOtherStarters{
     }
     // Squirtle Starter
     elif(var(VAR_STARTER_MON) == 1){
+        msgbox("Since you already have Squirtle,\n I'll give you Bulbasaur and Charmander")
+        waitmessage()
         givemon(SPECIES_BULBASAUR, 5)
         setvar(VAR_TEMP_0, SPECIES_BULBASAUR)
         call(PalletTown_ProfessorOaksLab_GiveOtherStartersNickName)
@@ -1684,13 +1687,17 @@ script PalletTown_ProfessorOaksLab_GiveOtherStarters{
     }
     // Charmander Starter
     elif(var(VAR_STARTER_MON) == 2){
+        msgbox("Since you already have Charmander,\n I'll give you Bulbasaur and Squirtle")
+        waitmessage()
         givemon(SPECIES_BULBASAUR, 5)
         setvar(VAR_TEMP_0, SPECIES_BULBASAUR)
         call(PalletTown_ProfessorOaksLab_GiveOtherStartersNickName)
         givemon(SPECIES_SQUIRTLE, 5)
         setvar(VAR_TEMP_0, SPECIES_SQUIRTLE)
-        call(PalletTown_ProfessorOaksLab_GiveOtherStartersNickName)    
+        call(PalletTown_ProfessorOaksLab_GiveOtherStartersNickName)
     }
+    msgbox("{RIVAL} could stand to slow down and\nlearn a thing or two from you.")
+    waitmessage()
     return
     }
 

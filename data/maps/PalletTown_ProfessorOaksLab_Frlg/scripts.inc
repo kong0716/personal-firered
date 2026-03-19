@@ -3323,92 +3323,118 @@ PalletTown_ProfessorOaksLab_GiveOtherStarters::
 # 1664 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_0
 # 1665 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_1
-# 1666 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	waitmessage
-# 1668 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1667 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	compare VAR_STARTER_MON, 0
 	goto_if_eq PalletTown_ProfessorOaksLab_GiveOtherStarters_2
-# 1677 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1678 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	compare VAR_STARTER_MON, 1
 	goto_if_eq PalletTown_ProfessorOaksLab_GiveOtherStarters_3
-# 1686 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1689 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	compare VAR_STARTER_MON, 2
 	goto_if_eq PalletTown_ProfessorOaksLab_GiveOtherStarters_4
 PalletTown_ProfessorOaksLab_GiveOtherStarters_1:
+# 1699 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_4
+# 1700 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	waitmessage
 	return
 
 PalletTown_ProfessorOaksLab_GiveOtherStarters_2:
+# 1668 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_1
 # 1669 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_CHARMANDER, 5
+	waitmessage
 # 1670 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_CHARMANDER
+	givemon SPECIES_CHARMANDER, 5
 # 1671 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
+	setvar VAR_TEMP_0, SPECIES_CHARMANDER
 # 1672 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_SQUIRTLE, 5
+	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
 # 1673 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_SQUIRTLE
+	givemon SPECIES_SQUIRTLE, 5
 # 1674 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	setvar VAR_TEMP_0, SPECIES_SQUIRTLE
+# 1675 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
 	goto PalletTown_ProfessorOaksLab_GiveOtherStarters_1
 
 PalletTown_ProfessorOaksLab_GiveOtherStarters_3:
-# 1678 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_BULBASAUR, 5
 # 1679 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_BULBASAUR
+	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_2
 # 1680 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
+	waitmessage
 # 1681 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_CHARMANDER, 5
+	givemon SPECIES_BULBASAUR, 5
 # 1682 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_CHARMANDER
+	setvar VAR_TEMP_0, SPECIES_BULBASAUR
 # 1683 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
+# 1684 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	givemon SPECIES_CHARMANDER, 5
+# 1685 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	setvar VAR_TEMP_0, SPECIES_CHARMANDER
+# 1686 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
 	goto PalletTown_ProfessorOaksLab_GiveOtherStarters_1
 
 PalletTown_ProfessorOaksLab_GiveOtherStarters_4:
-# 1687 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_BULBASAUR, 5
-# 1688 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_BULBASAUR
-# 1689 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
 # 1690 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	givemon SPECIES_SQUIRTLE, 5
+	msgbox PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_3
 # 1691 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	setvar VAR_TEMP_0, SPECIES_SQUIRTLE
+	waitmessage
 # 1692 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	givemon SPECIES_BULBASAUR, 5
+# 1693 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	setvar VAR_TEMP_0, SPECIES_BULBASAUR
+# 1694 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
+# 1695 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	givemon SPECIES_SQUIRTLE, 5
+# 1696 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	setvar VAR_TEMP_0, SPECIES_SQUIRTLE
+# 1697 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	call PalletTown_ProfessorOaksLab_GiveOtherStartersNickName
 	goto PalletTown_ProfessorOaksLab_GiveOtherStarters_1
 
 
 PalletTown_ProfessorOaksLab_GiveOtherStartersNickName::
-# 1698 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1705 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
-# 1699 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1706 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	waitfanfare
-# 1700 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1707 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	bufferspeciesname STR_VAR_1, VAR_TEMP_0
-# 1701 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1708 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-# 1702 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1709 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PalletTown_ProfessorOaksLab_GiveOtherStartersNickName_2
 PalletTown_ProfessorOaksLab_GiveOtherStartersNickName_1:
 	return
 
 PalletTown_ProfessorOaksLab_GiveOtherStartersNickName_2:
-# 1703 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+# 1710 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto PalletTown_ProfessorOaksLab_GiveOtherStartersNickName_1
 
 
 PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_0:
 # 1664 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	.string "{RIVAL} left too early...\nI wanted to give both of you some more\nrare Pokémon to help with...$"
+	.string "Heavens is that boy far too hasty.\nTo help you in this great undertaking,\nI wanted to give you some rare Pokémon.$"
 
 PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_1:
-# 1665 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
-	.string "Here you can have these Pokémon$"
+# 1668 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	.string "Since you already have Bulbasaur,\n I'll give you Charmander and Squirtle$"
+
+PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_2:
+# 1679 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	.string "Since you already have Squirtle,\n I'll give you Bulbasaur and Charmander$"
+
+PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_3:
+# 1690 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	.string "Since you already have Charmander,\n I'll give you Bulbasaur and Squirtle$"
+
+PalletTown_ProfessorOaksLab_GiveOtherStarters_Text_4:
+# 1699 "data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.pory"
+	.string "{RIVAL} could stand to slow down and\nlearn a thing or two from you.$"
