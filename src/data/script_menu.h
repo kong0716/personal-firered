@@ -788,6 +788,11 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     { COMPOUND_STRING("FLAREON") },
     { COMPOUND_STRING("JOLTEON") },
     { COMPOUND_STRING("VAPOREON") },
+    { COMPOUND_STRING("ESPEON") },
+    { COMPOUND_STRING("UMBREON") },
+    { COMPOUND_STRING("LEAFEON") },
+    { COMPOUND_STRING("GLACEON") },
+    { COMPOUND_STRING("SYLVEON") },
     { COMPOUND_STRING("Quit looking.") }
 };
 
