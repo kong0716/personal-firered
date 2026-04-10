@@ -154,14 +154,6 @@
       "flag": "FLAG_HIDE_CERULEAN_RIVAL"
     },
     {
-      "type": "clone",
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG",
-      "x": 50,
-      "y": 18,
-      "target_local_id": "LOCALID_ROUTE9_CUT_TREE",
-      "target_map": "MAP_ROUTE9"
-    },
-    {
       "local_id": "LOCALID_CERULEAN_WOMAN",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
